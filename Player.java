@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Player
 {
@@ -24,12 +25,48 @@ public class Player
 
     public int getHandValue()
     {
-        //do stuff
+        for(int i = 0; i>hand.size();i++){
+            if hand.get();
+        }
         return 1;
     }
 
     public void getCard(Deck deck)
     {
         //do stuff
+    }
+    public void getstartingHand(Deck deck){
+        for(int i = 0;i<2;i++){
+            hand.add(deck.getTopCard());
+            deck.discard(0);
+        }
+    }
+    public int placeBet(){
+        scanner betScan = new Scanner(System.in);
+        boolean validBet = false;
+        double bet = 0;
+        while (validBet==false){
+            System.out.println("how much bet you make buddy");
+            betScan.nextLine();
+            if (bet>money) {
+                System.out.println("no money dumbahhh");
+                
+            }
+            else if(bet<0){
+                System.out.println("enter amount pluh");
+            }
+            else{
+                System.out.println("thx for bet buddy");
+                validBet = true;
+                
+            }
+            return bet;
+
+
+        }
+        
+            
+        }
+
     }
 }
