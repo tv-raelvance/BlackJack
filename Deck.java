@@ -39,6 +39,9 @@ public class Deck
         this.cards.remove(0);
         return topCard;
     }
+    public void discard(int index){
+        
+    }
 
     public ArrayList<Card> getCards()
     {
