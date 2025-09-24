@@ -13,9 +13,15 @@ public class Player
         this.money = 100;
     }
 
-    public void playTurn()
+    public void playTurn(Deck deck)
     {
-        //do stuff
+        char hitStay;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("would you like to hit or stay");
+        hitStay = scanner.next().charAt(0);
+        getstartingHand(deck);
+        System.out.println("your hand is");
+        
     }
 
     public void hit()
@@ -42,7 +48,7 @@ public class Player
         }
     }
     public int placeBet(){
-        scanner betScan = new Scanner(System.in);
+        Scanner betScan = new Scanner(System.in);
         boolean validBet = false;
         double bet = 0;
         while (validBet==false){
