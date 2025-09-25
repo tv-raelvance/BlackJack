@@ -15,18 +15,41 @@ public class Player
 
     public void playTurn(Deck deck)
     {
+        placeBet();
         char hitStay;
         Scanner scanner = new Scanner(System.in);
         System.out.println("would you like to hit or stay");
         hitStay = scanner.next().charAt(0);
         getstartingHand(deck);
         System.out.println("your hand is");
+        boolean validInput = false;
+        while (validInput=false) {
+            if(hitStay.equals("h")){
+                hit(deck);
+                System.out.println("");
+                System.out.println("");
+                System.out.println();
+                hitStay = scanner.next().charAt(0);
+
+            }
+            else if (hitStay=="s") {
+                System.out.println("you stayed");
+                System.out.println("your hand is");
+                validInput = true;
+
+                
+            }
+            else{
+                System.out.println(:"invalid input");
+            }
+            
+        }
         
     }
 
     public void hit()
     {
-        //do stuff
+        //do sum
     }
 
     public int getHandValue()
