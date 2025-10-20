@@ -11,8 +11,18 @@ public class Card
         this.value = value;
     }
 
+    public int getValue()
+    {
+        return value;
+    }
+
     public String toString()
     {
         return this.face + " of " + this.suit + "(" + this.value + ")";
+    }
+
+    public Object getFace() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getFace'");
     }
 }

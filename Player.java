@@ -47,9 +47,9 @@ public class Player
         
     }
 
-    public void hit()
+    public void hit(Deck deck)
     {
-        
+        hand.add(deck.getTopCard());
     }
 
     public int getHandValue()
@@ -97,5 +97,8 @@ public class Player
             
         }
 
+        public ArrayList<Card> getHand(){
+            return this.hand;
+        }
+
     }
-}
