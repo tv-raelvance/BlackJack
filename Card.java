@@ -21,8 +21,7 @@ public class Card
         return this.face + " of " + this.suit + "(" + this.value + ")";
     }
 
-    public Object getFace() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getFace'");
+    public String getFace() {
+        return this.face;
     }
 }

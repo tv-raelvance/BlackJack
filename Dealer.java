@@ -17,12 +17,12 @@ public class Dealer extends Player
 
             }
             while(handValue > 21 && aces > 0){
-                return true;
+                return false;
             }
 
 
         }
-        return false;
+        return true;
 
     }
     public void dealerPlayTurn(Deck deck){
